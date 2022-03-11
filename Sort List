@@ -1,3 +1,10 @@
+Given the head of a linked list, rotate the list to the right by k places.
+
+One of the basic i thought is that first take all node into vector and rotate the vector by k times.
+And then convert the vector into List...
+
+1) solution...
+
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {

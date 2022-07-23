@@ -11,6 +11,11 @@
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
+        
+       
+        
+        
+        // bakwas solution
         vector<int> ans;
         ListNode* temp = head;
         while(temp!=NULL){

@@ -9,6 +9,8 @@ public:
         
         func(0, n, v, ans);
         return ans;
+        int i = 0;
+        string s = v;
     }
     
     void func(int col, int n, vector<string>& v, vector<vector<string>> &ans){
@@ -25,7 +27,7 @@ public:
             }
         }
     }
-    
+    # I LOVE SIBU
     bool issafe(int row, int col, int n, vector<string> &v){
         int r = row, c = col;
         

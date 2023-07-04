@@ -17,15 +17,25 @@ class Solution{
     {
         
         // your code here
-        map<int,int> m;
-        for(int i=0;i<size;i++){
-            m[a[i]]++;
-        }
-        for(auto it:m){
-            if(it.second>(size/2)) return it.first;
-        }
+       int el;
+       int count=0;
+       for(int i=0;i<size;i++){
+           if(count==0){
+               el=a[i];
+               count=1;
+           }
+           else if(a[i]==el){
+               count++;
+           }else{
+               count--;
+           }
+       }
+       int count1=0;
+       for(int i=0;i<size;i++){
+           if(el==a[i]) count1++;
+       }
+        if(count1>(size/2)) return el;
         return -1;
-        
     }
 };
 

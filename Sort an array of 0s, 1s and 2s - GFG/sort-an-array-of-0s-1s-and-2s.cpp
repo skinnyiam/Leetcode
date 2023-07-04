@@ -8,6 +8,11 @@ using namespace std;
 class Solution
 {
     public:
+    void swap2 (int& a,int& b){
+        int temp=a;
+        a=b;
+        b=temp;
+    }
     void sort012(int a[], int n)
     {
         // code here
@@ -16,12 +21,12 @@ class Solution
         int mid=0;
         while(mid<=high){
             if(a[mid]==0){
-                swap(a[mid],a[low]);
+                swap2(a[mid],a[low]);
                 mid++,low++;
             }else if(a[mid]==1){
                 mid++;
             }else{
-                swap(a[mid],a[high]);
+                swap2(a[mid],a[high]);
                 high--;
             }
         }
